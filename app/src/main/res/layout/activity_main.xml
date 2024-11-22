@@ -201,33 +201,42 @@
         </LinearLayout>
 
     </LinearLayout>
-    
+
     <FrameLayout
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:alpha="0"
+            android:id="@+id/activity_btr"
+            style="@style/Orange.Button."
+            android:layout_width="358dp"
+            android:layout_marginStart="25dp"
+            android:onClick="clickOnBTRActivity"
+            android:text="@string/Next" />
 
         <HorizontalScrollView
-            android:layout_gravity="bottom"
-            android:paddingHorizontal="26dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingHorizontal="26dp">
 
             <TextView
-                android:layout_marginHorizontal="36dp"
-                android:layout_gravity="bottom|end"
-                android:maxLines="1"
                 android:id="@+id/textOfCalculator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginHorizontal="36dp"
+                android:maxLines="1"
                 android:text="@string/number_0"
-                android:textSize="80sp"
                 android:textColor="@color/white"
-                />
+                android:textSize="80sp" />
 
         </HorizontalScrollView>
-
 
     </FrameLayout>
 

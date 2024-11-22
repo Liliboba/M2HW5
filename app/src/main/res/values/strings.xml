@@ -19,5 +19,12 @@
     <string name="operation_dot">.</string>
     <string name="operation_equals">=</string>
     <string name="operation_percent">%</string>
+    <string name="Next">Next</string>
+    <string name="Category">Category</string>
+    <string name="free">Free</string>
+    <string name="price">Price💰</string>
+    <string name="participants">Participants</string>
+    <string name="category">Category</string>
+    <string name="price1">Price</string>
 
 </resources>
